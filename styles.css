@@ -1,0 +1,194 @@
+/* 基础样式 */
+
+header {
+
+  background-color: transparent; /* 设置背景为透明 */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* 添加灰色边框，边框颜色为半透明的黑色 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 添加灰色阴影，阴影颜色为半透明的黑色 */
+  padding: 20px; /* 内边距 */
+  margin: 20px; /* 外边距 */
+
+    color: cornflowerblue;
+    text-align: center;
+    padding: 1rem;
+}
+
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f1f1f1;
+            padding: 10px 0;
+            background-image: url('72c3acb85ad8152df4ab8930d874c145.jpg');
+            background-size: cover; /* 使背景图像覆盖整个元素 */
+            background-repeat: no-repeat; /* 防止背景图像重复 */
+            background-attachment: fixed; /* 背景图像固定，不随滚动条滚动 */
+            background-position: center center; /* 背景图像居中显示 */
+        }
+        .nav-item {
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: transparent; /* 设置背景为透明 */
+            border: 1px solid rgba(0, 0, 0, 0.2); /* 添加灰色边框，边框颜色为半透明的黑色 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 添加灰色阴影，阴影颜色为半透明的黑色 */
+
+        }
+        .nav-item a {
+            text-decoration: none;
+            color: pink;
+            text-shadow: -1px 0 mediumpurple, 0 1px mediumpurple, 1px 0 mediumpurple, 0 -1px mediumpurple;
+            font-weight: bold;
+        }
+        .nav-item:hover {
+            background-color: yellowgreen;
+        }
+
+       .photo-container {
+           display: flex;
+           justify-content: space-around;
+           flex-wrap: wrap;
+           margin-top: 20px;
+       }
+
+           /* Photo item styles */
+
+           .photo-item {
+               flex: 0 0 calc(20.33% - 20px); /* Three columns with spacing */
+               margin-bottom: 20px;
+               overflow: hidden;
+               border-radius: 8px; /* Rounded corners */
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+           }
+
+           .photo-item img {
+               width: 100%; /* Full width within parent container */
+               height: auto; /* Maintain aspect ratio */
+               display: block; /* Remove any default inline behavior */
+           }
+
+           body {
+               font-family: Arial, sans-serif;
+               line-height: 1.0;
+
+               margin: 0;
+               padding: 0;
+               /* 添加最小高度，使页脚始终保持在底部 */
+               min-height: 100vh;
+               display: flex;
+               flex-direction: column; /* 使用flexbox居中#content */
+               background-image: url('72c3acb85ad8152df4ab8930d874c145.jpg');
+               background-size: cover; /* 使背景图像覆盖整个元素 */
+               background-repeat: no-repeat; /* 防止背景图像重复 */
+               background-attachment: fixed; /* 背景图像固定，不随滚动条滚动 */
+               background-position: center center; /* 背景图像居中显示 */
+           }
+
+           .music-player {
+     max-width: 800px; /* 或者您可以设置一个具体的宽度值，如800px */
+    margin: 50px 0 auto; /* 将左边的外边距设置为0，使播放器靠左对齐 */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.music-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.music-info img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.details {
+    flex: 1;
+}
+
+.details h2 {
+    margin: 0 0 10px 0;
+}
+
+.music-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.control-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.play-btn, .pause-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.play-btn:hover, .pause-btn:hover {
+    background-color: #0056b3;
+}
+
+           #content {
+               max-width: 1300px;
+               margin: 20px auto;
+               background-color: #fff;
+               padding: 20px;
+               border-radius: 8px;
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+               /* 使用flexbox居中内容 */
+               width: 100%;
+               flex: 1;
+               background-image: url('72c3acb85ad8152df4ab8930d874c145.jpg');
+               background-size: cover; /* 使背景图像覆盖整个元素 */
+               background-repeat: no-repeat; /* 防止背景图像重复 */
+               background-attachment: fixed; /* 背景图像固定，不随滚动条滚动 */
+               background-position: center center; /* 背景图像居中显示 */
+           }
+
+           footer {
+               text-align: center;
+               padding: 1rem;
+               background-color: lightblue;
+               color: #fff;
+               position: static;
+               bottom: 0;
+               width: 100%;
+               /* 添加z-index确保页脚在最底层 */
+               z-index: 100;
+           }
+
+           /* 媒体查询：对小屏幕设备进行样式调整 */
+           @media screen and (max-width: 768px) {
+               /* 对于小屏幕，减少#content的外边距 */
+               #content {
+                   margin: 10px auto;
+                   padding: 15px;
+               }
+
+               /* 对于小屏幕，调整footer的内边距 */
+               footer {
+                   padding: 0.5rem;
+               }
+           }
+
+           /* 媒体查询：对中等屏幕设备进行样式调整 */
+           @media screen and (min-width: 769px) and (max-width: 1024px) {
+               /* 对于中等屏幕，适当调整#content的外边距和内边距 */
+               #content {
+                   margin: 15px auto;
+                   padding: 20px;
+               }
+           }
