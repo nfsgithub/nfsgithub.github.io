@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiFei的网页</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>欢迎来到NiFei的个人网页</h1>
+        <h2><div id="current-time">当前时间：00:00:00</div></h2>
+
+         <!-- JavaScript部分（用于实时时间显示等） -->
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('current-time').textContent = `当前时间：${timeString}`;
+        }
+
+        // 更新时间每秒钟
+        setInterval(updateTime, 1000);
+
+        // 页面加载时立即更新时间
+        updateTime();
+    </script>
+    </header>
+     <div class="nav-container">
+        <div class="nav-item"><a href="#home">首页</a></div>
+         <div class="nav-item"><a href="index-food.html">美食篇</a></div>
+        <div class="nav-item"><a href="#flowers">鲜花篇</a></div>
+        <div class="nav-item"><a href="#music">音乐篇</a></div>
+        <div class="nav-item"><a href="#more">更多</a></div>
+    </div>
+
+    <div id="content">
+        <h3 id="home">首页</h3>
+        <p>美食篇预览</p>
+        <!-- 添加照片 -->
+        <div class="photo-container">
+            <div class="photo-item">
+                <img src="微信图片_202406161616161.jpg" alt="照片1">
+            </div>
+            <div class="photo-item">
+                <img src="微信图片_20240616161800.jpg" alt="照片2">
+            </div>
+              <div class="photo-item">
+                <img src="微信图片_20240616161616.jpg" alt="照片3">
+            </div>
+            <div class="photo-item">
+                <img src="微信图片_202406161618002.jpg" alt="照片4">
+            </div>
+        </div>
+        <p>鲜花篇预览</p>
+        <div class="photo-container">
+            <div class="photo-item">
+                <img src="微信图片_20240616171801.jpg" alt="照片5">
+            </div>
+            <div class="photo-item">
+                <img src="u=889447134,4056098656&fm=253&app=138&f=JPEG.jpg" alt="照片6">
+            </div>
+            <div class="photo-item">
+                <img src="u=1834620206,3172894447&fm=253&app=138&f=JPEG.jpg" alt="照片7">
+            </div>
+             <div class="photo-item">
+                <img src="src=http __image109.360doc.com_DownloadImg_2023_04_2612_264999922_8_20230426121415475.jpeg&refer=http __image109.360doc.webp" alt="照片8">
+            </div>
+        </div>
+
+       <p>音乐篇预览</p>
+        <div class="music-container">
+            <div class="music-player">
+        <div class="music-info">
+            <img src="k2.png" alt="Album Cover">
+            <div class="details">
+                <h2>广州大学校歌</h2>
+                <p>词：集体创作</p>
+                <p>曲：柳竖</p>
+            </div>
+        </div>
+
+        <div class="music-controls">
+            <audio controls>
+                <source src="校歌.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="control-buttons">
+                <button class="play-btn">播放</button>
+                <button class="pause-btn">暂停</button>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    </div>
+    <footer>
+    <p>&copy; 2024 <a href="/" title="返回首页">NiFei的网页</a>. 版权所有 &middot;</p>
+    </footer>
+</body>
+</html>
